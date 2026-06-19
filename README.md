@@ -126,4 +126,4 @@ Created by **AMAL ASIF**
 
 ---
 
-⭐ If you like this project, feel free to give it a star!
+⭐ If you like this project, feel free to give it a star!  
