@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+</head>
+    <link rel="stylesheet" href="css/style2.css">
+<body>
+    <script src="js/main.js"></script>
+    <header>
+         <!-- <div class="header-left">AUREA</div> -->
+          <div class="header-left">
+            <a href="aboutus.html">AUREA</a>
+          </div>
+         <div class="header-center">
+            <nav>
+                <a href="index.html">home</a>
+                <a href="navigation.html">Search</a>
+                <a href="cart.html">shopping cart</a>
+                <a href="contact.html">contact us</a>
+                <a href="product.html">product</a>
+            </nav>
+         </div>
+         <div class="header-right">
+                <button class="sign-in-btn"
+                onclick="window.location.href='logiin.html'">
+                SIGN IN
+                </button>
+         </div>
+
+    </header>
+<main>
+<!-- <section class="about-us" style="max-width: 800px; margin: auto; padding: 40px;">
+    <h1>About Us</h1>
+
+    <h2>Our Story</h2>
+    <p>
+        Aurea started with a simple idea: jewelry should feel personal. 
+        What began as a small collection of handmade pieces has grown into a space 
+        where everyone can find something that reflects their own style. 
+        Every item is designed, crafted, and customized with care so it feels like yours.
+    </p>
+
+    <h2>Our Values</h2>
+    <ul>
+        <li><strong>Authenticity:</strong> Everything we create is made with genuine attention and intention.</li>
+        <li><strong>Creativity:</strong> We celebrate individuality and make pieces that let you express it.</li>
+        <li><strong>Sustainability:</strong> We craft responsibly and focus on quality that lasts.</li>
+    </ul>
+
+    <h2>Our Mission</h2>
+    <p>
+        We want to make self-expression easy through jewelry that’s beautiful, affordable, 
+        and customizable — pieces that fit your story, not the other way around.
+    </p>
+</section> -->
+
+
+        <main>
+
+<section class="about-page">
+
+    <h1>About Us</h1>
+
+
+    <div class="about-cards">
+
+
+        <div class="about-card" onclick="showAbout('story')">
+            <h2>Our Story</h2>
+        </div>
+
+
+        <div class="about-card" onclick="showAbout('mission')">
+            <h2>Our Mission</h2>
+        </div>
+
+
+        <div class="about-card" onclick="showAbout('values')">
+            <h2>Our Values</h2>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="about-content" id="aboutContent">
+
+        <h2>Choose a section</h2>
+        <p>
+            Click any card above to learn more about AUREA.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+<script>
+function showAbout(section)
+{
+
+    let content = document.getElementById("aboutContent");
+
+
+    if(section === "story")
+    {
+        content.innerHTML =
+        `
+        <h2>Our Story</h2>
+
+        <p>
+        Aurea started with a simple idea: jewelry should be more than just an accessory.
+        It should represent your personality, memories, and the moments that matter to you.
+        <br><br>
+        What began as a passion for creating beautiful handmade pieces grew into a brand
+        where every customer can find something unique. From elegant necklaces to
+        customizable charms, every piece is designed with creativity, care, and love.
+        </p>
+        `;
+    }
+
+
+
+    else if(section === "mission")
+    {
+        content.innerHTML =
+        `
+        <h2>Our Mission</h2>
+
+        <p>
+        Our mission is to make jewelry personal, meaningful, and accessible for everyone.
+        We aim to create designs that allow people to express their individuality and
+        celebrate their own style.
+        <br><br>
+        Through quality craftsmanship and customizable options, Aurea creates pieces
+        that are not only beautiful but also connected to your story.
+        </p>
+        `;
+    }
+
+
+
+    else if(section === "values")
+    {
+        content.innerHTML =
+        `
+        <h2>Our Values</h2>
+
+        <p>
+        At Aurea, we believe every piece of jewelry should be created with purpose.
+        Our values are based on authenticity, creativity, and attention to detail.
+        <br><br>
+        We value originality by creating designs that feel personal, creativity by
+        encouraging self-expression, and quality by making pieces that customers
+        can cherish for a long time.
+        </p>
+        `;
+    }
+
+}
+
+</script>
+    </main>
+
+   <footer>
+
+        <p>
+            <a href="aboutus.html" class="footer-brand">
+                AUREA
+            </a>
+        </p>
+
+        <p>
+            &copy; 2024 - All Rights Reserved  
+            Handmade & customizable jewelry made with love
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="aboutus.html">About Us</a>
+            <a href="footer.html">Customer Care</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="product.html">Products</a>
+        </div>
+
+
+        <div class="social-icons">
+            <a href="https://instagram.com/aureajewelry" 
+                target="_blank" 
+                class="social-icon">
+                <p class="instagram">
+                    Instagram: @aureajewelry
+                </p>
+            </a>
+
+
+            <a href="https://wa.me/92123456789" 
+                target="_blank" 
+                class="social-icon">
+
+                <p class="whatsapp">
+                    Whatsapp: +92 123 456 789
+                </p>
+
+            </a>
+
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+</head>
+    <link rel="stylesheet" href="css/style2.css">
+<body>
+    <script src="js/main.js"></script>
+    <header>
+         <!-- <div class="header-left">AUREA</div> -->
+          <div class="header-left">
+            <a href="aboutus.html">AUREA</a>
+          </div>
+         <div class="header-center">
+            <nav>
+                <a href="index.html">home</a>
+                <a href="navigation.html">Search</a>
+                <a href="cart.html">shopping cart</a>
+                <a href="contact.html">contact us</a>
+                <a href="product.html">product</a>
+            </nav>
+         </div>
+         <div class="header-right">
+                <button class="sign-in-btn"
+                onclick="window.location.href='logiin.html'">
+                SIGN IN
+                </button>
+         </div>
+
+    </header>
+    <main>
+            <main class="product-detail-page">
+
+    <div class="product-container">
+
+        <div class="main-section">
+
+            <!-- LEFT SIDE -->
+
+            <div class="left-column">
+
+                <div class="image-gallery">
+
+                    <img
+                        id="product-image"
+                        src="images/bracelet1.jpeg"
+                        class="big-image"
+                        alt="Custom Bracelet">
+
+                    <div class="thumbs">
+                        <img src="images/bracelet2.jpeg" alt="">
+                        <img src="images/bracelet3.jpeg" alt="">
+                        <img src="images/bracelet4.jpeg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="description">
+                    This customizable beaded bracelet is handmade with premium beads.
+                    Choose your bead colors, charm style and add your initials for a
+                    personalized look. Perfect for gifts or your own unique aesthetic.
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="info">
+
+                <h2 id="product-name">
+                    Custom Beaded Bracelet
+                </h2>
+
+                <div class="price" id="product-price">
+                    Rs 1200
+                </div>
+
+                <div class="rating">
+                    ⭐ 4.8 (230 Reviews)
+                </div>
+
+                <div class="stock">
+                    ✓ In Stock
+                </div>
+
+                <div class="qty-box">
+
+                    <label>Quantity</label>
+
+                    <input
+                        type="number"
+                        id="product-quantity"
+                        value="1"
+                        min="1">
+
+                </div>
+
+                <div class="size-section">
+
+                    <label>Select Size</label>
+
+                    <div class="size-options">
+
+                        <button type="button" class="size-btn">
+                            S
+                        </button>
+
+                        <button type="button" class="size-btn">
+                            M
+                        </button>
+
+                        <button type="button" class="size-btn">
+                            L
+                        </button>
+
+                        <button type="button" class="size-btn">
+                            XL
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <button class="btn add-cart-btn">
+                        Add To Cart
+                    </button>
+
+                    <button class="btn wishlist">
+                        Wishlist
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CUSTOMIZATION SECTION -->
+
+        <div class="customization">
+
+            <h3>Customize Your Bracelet</h3>
+
+            <div class="customization-grid">
+
+                <div class="customization-group">
+
+                    <label>Bead Color</label>
+
+                    <select>
+                        <option>Pink</option>
+                        <option>White</option>
+                        <option>Black</option>
+                        <option>Blue</option>
+                        <option>Purple</option>
+                    </select>
+
+                </div>
+
+                <div class="customization-group">
+
+                    <label>Charm Style</label>
+
+                    <select>
+                        <option>Heart</option>
+                        <option>Butterfly</option>
+                        <option>Star</option>
+                        <option>Moon</option>
+                        <option>Flower</option>
+                    </select>
+
+                </div>
+
+                <div class="customization-group">
+
+                    <label>Name / Initials</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Name">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RELATED PRODUCTS -->
+
+<div class="related">
+
+    <h3>Related Products</h3>
+
+    <div class="related-grid">
+
+
+        <div class="r-card">
+
+            <a href="detail.html">
+
+                <img src="images/Gemini_Generated_Image_b17g5jb17g5jb17g.png" alt="Heart Charm">
+
+                <div class="name">Heart Charm</div>
+
+                <div class="price">Rs 600</div>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="r-card">
+
+            <a href="detail.html">
+
+                <img src="images/Gemini_Generated_Image_ksocouksocouksoc.png" alt="Name Bracelet">
+
+                <div class="name">Name Bracelet</div>
+
+                <div class="price">Rs 1100</div>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="r-card">
+
+            <a href="detail.html">
+
+                <img src="images/Gemini_Generated_Image_ssi55bssi55bssi5.png" alt="Moon Charm">
+
+                <div class="name">Moon Charm</div>
+
+                <div class="price">Rs 580</div>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="r-card">
+
+            <a href="detail.html">
+
+                <img src="images/Gemini_Generated_Image_p5al0cp5al0cp5al.png" alt="Pearl Necklace">
+
+                <div class="name">Pearl Necklace</div>
+
+                <div class="price">Rs 1500</div>
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+    </div>
+
+</main>
+
+<!-- ADD TO CART POPUP -->
+
+<div id="cart-popup">
+
+    ✓ Product Added To Cart!
+
+    <br>
+
+    <a href="cart.html">
+        View Cart
+    </a>
+
+</div>
+    </main>
+
+   <footer>
+
+        <p>
+            <a href="aboutus.html" class="footer-brand">
+                AUREA
+            </a>
+        </p>
+
+        <p>
+            &copy; 2024 - All Rights Reserved  
+            Handmade & customizable jewelry made with love
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="aboutus.html">About Us</a>
+            <a href="footer.html">Customer Care</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="product.html">Products</a>
+        </div>
+
+
+        <div class="social-icons">
+            <a href="https://instagram.com/aureajewelry" 
+                target="_blank" 
+                class="social-icon">
+                <p class="instagram">
+                    Instagram: @aureajewelry
+                </p>
+            </a>
+
+
+            <a href="https://wa.me/92123456789" 
+                target="_blank" 
+                class="social-icon">
+
+                <p class="whatsapp">
+                    Whatsapp: +92 123 456 789
+                </p>
+
+            </a>
+
+        </div>
+
+    </footer>
+</body>
+</html>
+

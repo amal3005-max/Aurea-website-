@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+    <link rel="stylesheet" href="css/style2.css">
+<body>
+    <script src="js/main.js"></script>
+    <header>
+         <!-- <div class="header-left">AUREA</div> -->
+          <div class="header-left">
+            <a href="aboutus.html">AUREA</a>
+          </div>
+         <div class="header-center">
+            <nav>
+                <a href="index.html">home</a>
+                <a href="navigation.html">Search</a>
+                <a href="cart.html">shopping cart</a>
+                <a href="contact.html">contact us</a>
+                <a href="product.html">product</a>
+            </nav>
+         </div>
+         <div class="header-right">
+                <button class="sign-in-btn"
+                onclick="window.location.href='logiin.html'">
+                SIGN IN
+                </button>
+         </div>
+
+    </header>
+    <main>
+        <section class="cart-section">
+            <h1>Your Shopping Cart</h1>
+            <div class="cart-container">
+                <!-- <div class="cart-items">
+                    <h2>Items in Cart (2)</h2>
+                    <div class="cart-item">
+                        <img src="images/Gemini_Generated_Image_8lg5wc8lg5wc8lg5.png" alt="Flower Charm Necklace">
+                        <div class="item-details">
+                            <h3>Flower Charm Necklace</h3>
+                            <p class="price">Rs. 450</p>
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+
+                     //<div class="cart-item">
+                        <img src="images/Gemini_Generated_Image_ksocouksocouksoc.png" alt="Purple Butterfly Bracelet">
+                        <div class="item-details">
+                            <h3>Purple Butterfly Bracelet</h3>
+                            <p class="price">Rs. 450</p>
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity">1</span>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <button class="remove-btn">Remove</button>
+                    </div> //
+
+                    <div class="cart-item">
+                        <img src="images/Gemini_Generated_Image_8lg5wc8lg5wc8lg5.png" alt="Flower Charm Necklace">
+
+                        <div class="item-details">
+                            <h3>Flower Charm Necklace</h3>
+                            <p class="price" data-price="450">Rs. 450</p>
+
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity">1</span>
+                                 <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+
+                     <button class="remove-btn">Remove</button>
+                    </div>
+                </div> -->
+
+                <div class="cart-items">
+
+    <h2 id="cart-count">Items in Cart (2)</h2>
+
+    <!-- Product 1 -->
+
+    <div class="cart-item">
+
+        <a href="detail.html" class="product-link">
+            <img src="images/Gemini_Generated_Image_8lg5wc8lg5wc8lg5.png"
+                 alt="Flower Charm Necklace">
+        </a>
+
+        <div class="item-details">
+
+            <a href="detail.html" class="product-link">
+                <h3>Flower Charm Necklace</h3>
+            </a>
+
+            <p class="price" data-price="450">Rs. 450</p>
+
+            <div class="quantity-control">
+                <button class="quantity-btn minus">−</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+
+        </div>
+
+        <button class="remove-btn">Remove</button>
+
+    </div>
+
+    <!-- Product 2 -->
+
+    <div class="cart-item">
+
+        <a href="detail.html" class="product-link">
+            <img src="images/Gemini_Generated_Image_ksocouksocouksoc.png"
+                 alt="Purple Butterfly Bracelet">
+        </a>
+
+        <div class="item-details">
+
+            <a href="detail.html" class="product-link">
+                <h3>Purple Butterfly Bracelet</h3>
+            </a>
+
+            <p class="price" data-price="450">Rs. 450</p>
+
+            <div class="quantity-control">
+                <button class="quantity-btn minus">−</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+            </div>
+
+        </div>
+
+        <button class="remove-btn">Remove</button>
+
+    </div>
+
+</div>
+
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+
+                    <!-- <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>Rs. 900</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span>Rs. 150</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount:</span>
+                        <span>- Rs. 100</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span>Rs. 950</span>
+                    </div> -->
+                    <!-- <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">Rs. 900</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="shipping">Rs. 150</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Discount:</span>
+                        <span id="discount">- Rs. 100</span>
+                    </div>
+
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">Rs. 950</span>
+                    </div> -->
+                    <div class="summary-row">
+    <span>Subtotal:</span>
+    <span id="subtotal">Rs. 900</span>
+</div>
+
+<div class="summary-row">
+    <span>Shipping:</span>
+    <span id="shipping">Rs. 150</span>
+</div>
+
+<div class="summary-row">
+    <span>Discount:</span>
+    <span id="discount">- Rs. 100</span>
+</div>
+
+<div class="summary-row total">
+    <span>Total:</span>
+    <span id="total">Rs. 950</span>
+</div>
+                    
+                    <p class="delivery-info">Estimated Delivery: 3-5 business days</p>
+                    
+                    <div class="promo-code">
+                        <input type="text" placeholder="Enter Promo Code">
+                        <button>Apply</button>
+                    </div>
+                    
+                    <!-- <div class="cart-buttons">
+                        <button class="continue-btn">Continue Shopping</button>
+                        <button class="checkout-btn">
+                            <a href="checkout.html" target="_blank" class="cart-buttons">Proceed to Checkout</a>
+                        </button>
+                    </div> -->
+                    <!-- <div class="cart-buttons">
+                        <button class="continue-btn"
+                        onclick="window.location.href='product.html'">
+                        Continue Shopping
+                        </button>
+
+                        <a href="checkout.html" class="checkout-btn">
+                         Proceed to Checkout
+                        </a>
+                    </div> -->
+                    <div class="cart-buttons">
+
+    <button class="continue-btn"
+            onclick="window.location.href='product.html'">
+        Continue Shopping
+    </button>
+
+    <a href="checkout.html" class="checkout-btn">
+        Proceed to Checkout
+    </a>
+
+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>
+            <a href="aboutus.html" class="footer-brand">
+                AUREA
+            </a>
+        </p>
+
+        <p>
+            &copy; 2024 - All Rights Reserved  
+            Handmade & customizable jewelry made with love
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="aboutus.html">About Us</a>
+            <a href="footer.html">Customer Care</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="product.html">Products</a>
+        </div>
+
+
+        <div class="social-icons">
+            <a href="https://instagram.com/aureajewelry" 
+                target="_blank" 
+                class="social-icon">
+                <p class="instagram">
+                    Instagram: @aureajewelry
+                </p>
+            </a>
+
+
+            <a href="https://wa.me/92123456789" 
+                target="_blank" 
+                class="social-icon">
+
+                <p class="whatsapp">
+                    Whatsapp: +92 123 456 789
+                </p>
+
+            </a>
+
+        </div>
+
+    </footer>
+</body>
+</html>
